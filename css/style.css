@@ -8,6 +8,7 @@
 
   .container{
       display: flex;
+      flex-direction: column;
       width: 100vw;
       height: 100vh;
   }
@@ -18,21 +19,44 @@
     display: flex;
 }
 
+
 /* contnent */
-
 .speaker{
-    height: 20px;
-}
-
-.speaker > *{
-    background-color: grey;
     color: white;
-    height: 20px;
+    text-align: right;
+    margin-top: 10px;
 }
 
+.view{
+    background-color: rgba(74,74,74,255);
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 12px;
+}
 
+.maxi-box{
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 90vw;
+    height: 80vh;
+    border: 2px solid red;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+.item{
+    background-image: url("../img/img.jpeg");
+    background-size: cover;
+    height: 130px;
+    width: 200px;
+    margin: 1px;
+}
 /* debug */
 
 .debug .container{
   background-color: black;
   }
+
+.debug .speaker{
+  height: 20px;
+}
