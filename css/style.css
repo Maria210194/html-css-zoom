@@ -55,7 +55,40 @@
 
 .maxi-w{
     width: 100vw;
+    display: flex;
+    align-items: center;
 }
+
+.maxi-w > *{
+    width: calc(100% / 3);
+    border: 2px solid rebeccapurple;
+}
+
+.left{
+    display: flex;
+}
+
+.flex-i{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    flex-grow: 1;
+}
+
+.flex-i > *{
+    padding: 2px;
+    justify-content: baseline;
+    line-height: 15px;
+}
+
+.small{
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+
 /* debug */
 
 .debug .container{
@@ -68,5 +101,5 @@
 
 .debug .maxi-w{
     height: 60px;
-    background-color: aqua;
+    background-color: rgba(74,74,74,255);
 }
