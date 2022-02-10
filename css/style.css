@@ -6,4 +6,33 @@
     padding: 0px;
   }
 
-  
+  .container{
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+  }
+
+/* utilities */
+
+.flex{
+    display: flex;
+}
+
+/* contnent */
+
+.speaker{
+    height: 20px;
+}
+
+.speaker > *{
+    background-color: grey;
+    color: white;
+    height: 20px;
+}
+
+
+/* debug */
+
+.debug .container{
+  background-color: black;
+  }
